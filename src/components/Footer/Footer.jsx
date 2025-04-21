@@ -5,7 +5,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 const footer = () => {
   return (
-       <div className="navbar flex flex-col items-center justify-center gap-3 ">
+       <div className="navbar flex flex-col items-center justify-center gap-3 py-8 ">
     <div className="navbar-start ml-[500px]">
       
      <div className='flex flex-row items-center gap-3'>

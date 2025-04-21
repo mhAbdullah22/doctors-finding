@@ -1,25 +1,25 @@
 [
   {
     "id": 1,
-    "image": "https://via.placeholder.com/150",
+    "image": "https://i.ibb.co.com/MxY98727/Doctor-PNG-Images.png",
     "name": "Dr. Ayesha Rahman",
     "education": "MBBS, FCPS (Medicine)",
-    "speciality": "Internal Medicine",
+    "speciality": "Medicine",
     "experience": "12 years",
     "registration_number": "BMC-10234"
   },
   {
     "id": 2,
-    "image": "https://via.placeholder.com/150",
+    "image":"https://i.ibb.co.com/PsCMDY0v/doctor-PNG16041.png",
     "name": "Dr. Rezaul Karim",
     "education": "MBBS, MS (Orthopedics)",
-    "speciality": "Orthopedic Surgeon",
+    "speciality": "O Surgeon",
     "experience": "15 years",
     "registration_number": "BMC-20987"
   },
   {
     "id": 3,
-    "image": "https://via.placeholder.com/150",
+    "image": "https://i.ibb.co.com/MxY98727/Doctor-PNG-Images.png",
     "name": "Dr. Eshrat Jahan",
     "education": "MBBS, MD (Cardiology)",
     "speciality": "Cardiologist",
@@ -28,16 +28,16 @@
   },
   {
     "id": 4,
-    "image": "https://via.placeholder.com/150",
+    "image": "https://i.ibb.co.com/PsCMDY0v/doctor-PNG16041.png",
     "name": "Dr. Farhan Ahmed",
     "education": "MBBS, FCPS (Surgery)",
-    "speciality": "General Surgeon",
+    "speciality": "G Surgeon",
     "experience": "9 years",
     "registration_number": "BMC-17892"
   },
   {
     "id": 5,
-    "image": "https://via.placeholder.com/150",
+    "image": "https://i.ibb.co.com/MxY98727/Doctor-PNG-Images.png",
     "name": "Dr. Tamanna Islam",
     "education": "MBBS, DGO",
     "speciality": "Gynecologist",
@@ -46,7 +46,7 @@
   },
   {
     "id": 6,
-    "image": "https://via.placeholder.com/150",
+    "image": "https://i.ibb.co.com/PsCMDY0v/doctor-PNG16041.png",
     "name": "Dr. Kamal Uddin",
     "education": "MBBS, DDV",
     "speciality": "Dermatologist",
@@ -55,7 +55,7 @@
   },
   {
     "id": 7,
-    "image": "https://via.placeholder.com/150",
+    "image": "https://i.ibb.co.com/MxY98727/Doctor-PNG-Images.png",
     "name": "Dr. Sabrina Alam",
     "education": "MBBS, MD (Pediatrics)",
     "speciality": "Pediatrician",
@@ -64,7 +64,7 @@
   },
   {
     "id": 8,
-    "image": "https://via.placeholder.com/150",
+    "image": "https://i.ibb.co.com/PsCMDY0v/doctor-PNG16041.png",
     "name": "Dr. Mahbub Hassan",
     "education": "MBBS, FCPS (ENT)",
     "speciality": "ENT Specialist",
@@ -73,7 +73,7 @@
   },
   {
     "id": 9,
-    "image": "https://via.placeholder.com/150",
+    "image": "https://i.ibb.co.com/MxY98727/Doctor-PNG-Images.png",
     "name": "Dr. Lubna Chowdhury",
     "education": "MBBS, MD (Neurology)",
     "speciality": "Neurologist",
