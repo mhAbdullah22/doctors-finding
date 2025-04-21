@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "image": "https://via.placeholder.com/150",
+    "name": "Dr. Ayesha Rahman",
+    "education": "MBBS, FCPS (Medicine)",
+    "speciality": "Internal Medicine",
+    "experience": "12 years",
+    "registration_number": "BMC-10234"
+  },
+  {
+    "id": 2,
+    "image": "https://via.placeholder.com/150",
+    "name": "Dr. Rezaul Karim",
+    "education": "MBBS, MS (Orthopedics)",
+    "speciality": "Orthopedic Surgeon",
+    "experience": "15 years",
+    "registration_number": "BMC-20987"
+  },
+  {
+    "id": 3,
+    "image": "https://via.placeholder.com/150",
+    "name": "Dr. Eshrat Jahan",
+    "education": "MBBS, MD (Cardiology)",
+    "speciality": "Cardiologist",
+    "experience": "10 years",
+    "registration_number": "BMC-11945"
+  },
+  {
+    "id": 4,
+    "image": "https://via.placeholder.com/150",
+    "name": "Dr. Farhan Ahmed",
+    "education": "MBBS, FCPS (Surgery)",
+    "speciality": "General Surgeon",
+    "experience": "9 years",
+    "registration_number": "BMC-17892"
+  },
+  {
+    "id": 5,
+    "image": "https://via.placeholder.com/150",
+    "name": "Dr. Tamanna Islam",
+    "education": "MBBS, DGO",
+    "speciality": "Gynecologist",
+    "experience": "8 years",
+    "registration_number": "BMC-18733"
+  },
+  {
+    "id": 6,
+    "image": "https://via.placeholder.com/150",
+    "name": "Dr. Kamal Uddin",
+    "education": "MBBS, DDV",
+    "speciality": "Dermatologist",
+    "experience": "11 years",
+    "registration_number": "BMC-13456"
+  },
+  {
+    "id": 7,
+    "image": "https://via.placeholder.com/150",
+    "name": "Dr. Sabrina Alam",
+    "education": "MBBS, MD (Pediatrics)",
+    "speciality": "Pediatrician",
+    "experience": "7 years",
+    "registration_number": "BMC-16543"
+  },
+  {
+    "id": 8,
+    "image": "https://via.placeholder.com/150",
+    "name": "Dr. Mahbub Hassan",
+    "education": "MBBS, FCPS (ENT)",
+    "speciality": "ENT Specialist",
+    "experience": "13 years",
+    "registration_number": "BMC-19876"
+  },
+  {
+    "id": 9,
+    "image": "https://via.placeholder.com/150",
+    "name": "Dr. Lubna Chowdhury",
+    "education": "MBBS, MD (Neurology)",
+    "speciality": "Neurologist",
+    "experience": "14 years",
+    "registration_number": "BMC-14321"
+  }
+]
