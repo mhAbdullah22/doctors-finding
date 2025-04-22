@@ -1,14 +1,24 @@
 import React from 'react';
-import { useLoaderData, useParams } from 'react-router';
+import { Link, useLoaderData, useParams } from 'react-router';
+import '../DoctorDetails/doctordetails.css'
+import { addToStoredDB } from '../../Utility/addtoDB';
 
 const DoctorDetails = () => {
+  
   const data=useLoaderData();
   
   const {id}=useParams();
-  
+ 
   const singledoctor=data.find(d=>d.id===parseInt(id));
-  console.log(singledoctor);
+  // console.log(singledoctor);
   const {image,name,education,registration_number,working_place,consultation_fee,availability}=singledoctor;
+  
+  const handleAppointment=(id)=>{
+    addToStoredDB(id);
+    }
+  
+ 
+  
   return (
     <div className='flex flex-col gap-5 my-8'>
       <div className='flex flex-col gap-3 items-center justify-center py-6 px-4 bg-white rounded-2xl'>
@@ -47,7 +57,9 @@ const DoctorDetails = () => {
         <p className='border-2 p-1 border-green-300 bg-green-200 rounded-3xl'>Doctor Available Today</p>
         </div>
         <p className='text-xs p-1 bg-[#fcd99d] border-2 border-amber-100 rounded-2xl w-[900px] text-center'>Due to high patient volume, we are currently accepting appointments for today only. We appreciate your understanding and cooperation.</p>
-        <button className='btn bg-blue-600 text-white rounded-3xl'>Book Appointment Now</button>
+        
+        <Link to='/mybookings'> <button onClick={()=>handleAppointment(id)} className='btn bg-blue-600 text-white rounded-3xl px-130'>Book Appointment Now</button></Link>
+    
       </div>
     </div>
   );

@@ -4,6 +4,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import {  NavLink } from 'react-router';
+
 const footer = () => {
   return (
        <div className="navbar flex flex-col items-center justify-center gap-3 py-8 ">
@@ -16,7 +17,7 @@ const footer = () => {
     </div>
     <div className="navbar-center border-b-2 border-gray-400 px-16">
       <ul className="menu menu-horizontal px-1">
-      <li><NavLink>Home</NavLink></li>
+      <li><NavLink to='/'>Home</NavLink></li>
         <li>
         <NavLink>My Bookings</NavLink>
         </li>

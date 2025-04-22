@@ -1,5 +1,5 @@
 import React from 'react';
-import DoctorDetails from '../DoctorDetails/DoctorDetails';
+
 import { Link } from 'react-router';
 
 const Doctor = ({doctor}) => {
