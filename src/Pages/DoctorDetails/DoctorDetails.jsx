@@ -10,10 +10,10 @@ const DoctorDetails = () => {
   console.log(singledoctor);
   const {image,name,education,registration_number,working_place,consultation_fee,availability}=singledoctor;
   return (
-    <div>
+    <div className='flex flex-col gap-5 my-8'>
       <div className='flex flex-col gap-3 items-center justify-center py-6 px-4 bg-white rounded-2xl'>
         <h3 className='font-bold text-2xl'>Doctor’s Profile Details</h3>
-        <p className='text-center'>Lorem ipsum dolor sit amet consectetur. Sit enim blandit orci tortor amet ut. Suscipit sed est fermentum magna. Quis vitae tempus <br /> facilisis turpis imperdiet mattis donec dignissim volutpat.</p>
+        <p className='text-center'>Our platform connects you with verified, experienced doctors across various specialties — all at your convenience. Whether it's a routine <br /> checkup or urgent consultation, book appointments in minutes and receive quality care you can trust.</p>
       </div>
       <div className='flex flex-row gap-8 items-center bg-white p-6 rounded-2xl'>
         <div className=''><img className='w-[320px] h-[250px] 
@@ -40,7 +40,15 @@ const DoctorDetails = () => {
           </div>
         </div>
       </div>
-      <div>b</div>
+      <div className='bg-white rounded-2xl p-10 flex flex-col gap-3'>
+        <h3 className='font-bold text-2xl text-center'>Book An Appoinment</h3>
+        <div className='flex flex-row items-center justify-between'>
+        <p className='font-bold'>Availability</p>
+        <p className='border-2 p-1 border-green-300 bg-green-200 rounded-3xl'>Doctor Available Today</p>
+        </div>
+        <p className='text-xs p-1 bg-[#fcd99d] border-2 border-amber-100 rounded-2xl w-[900px] text-center'>Due to high patient volume, we are currently accepting appointments for today only. We appreciate your understanding and cooperation.</p>
+        <button className='btn bg-blue-600 text-white rounded-3xl'>Book Appointment Now</button>
+      </div>
     </div>
   );
 };
