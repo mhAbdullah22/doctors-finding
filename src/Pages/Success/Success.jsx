@@ -2,7 +2,7 @@ import React from 'react';
 import successdr from '../../assets/C001-assets/success-doctor.png'
 import review from '../../assets/C001-assets/success-review.png'
 import patients from '../../assets/C001-assets/success-patients.png'
-import staffs from '../../assets/C001-assets/success-doctor.png'
+import staffs from '../../assets/C001-assets/success-staffs.png'
 const Success = () => {
   return (
     <div className='flex flex-col items-center justify-center gap-4 py-10'>

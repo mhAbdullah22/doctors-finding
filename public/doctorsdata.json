@@ -6,16 +6,22 @@
     "education": "MBBS, FCPS (Medicine)",
     "speciality": "Medicine",
     "experience": "12 years",
-    "registration_number": "BMC-10234"
+    "registration_number": "BMC-10234",
+    "availability": ["Sunday", "Tuesday", "Thursday"],
+    "consultation_fee": "800 BDT",
+    "working_place": "Dhaka Medical Center"
   },
   {
     "id": 2,
-    "image":"https://i.ibb.co.com/PsCMDY0v/doctor-PNG16041.png",
+    "image": "https://i.ibb.co.com/PsCMDY0v/doctor-PNG16041.png",
     "name": "Dr. Rezaul Karim",
     "education": "MBBS, MS (Orthopedics)",
     "speciality": "O Surgeon",
     "experience": "15 years",
-    "registration_number": "BMC-20987"
+    "registration_number": "BMC-20987",
+    "availability": ["Monday", "Wednesday", "Friday"],
+    "consultation_fee": "1000 BDT",
+    "working_place": "Apollo Hospital Dhaka"
   },
   {
     "id": 3,
@@ -24,7 +30,10 @@
     "education": "MBBS, MD (Cardiology)",
     "speciality": "Cardiologist",
     "experience": "10 years",
-    "registration_number": "BMC-11945"
+    "registration_number": "BMC-11945",
+    "availability": ["Saturday", "Monday", "Wednesday"],
+    "consultation_fee": "1200 BDT",
+    "working_place": "National Heart Foundation"
   },
   {
     "id": 4,
@@ -33,7 +42,10 @@
     "education": "MBBS, FCPS (Surgery)",
     "speciality": "G Surgeon",
     "experience": "9 years",
-    "registration_number": "BMC-17892"
+    "registration_number": "BMC-17892",
+    "availability": ["Sunday", "Tuesday", "Friday"],
+    "consultation_fee": "900 BDT",
+    "working_place": "Square Hospitals Ltd."
   },
   {
     "id": 5,
@@ -42,7 +54,10 @@
     "education": "MBBS, DGO",
     "speciality": "Gynecologist",
     "experience": "8 years",
-    "registration_number": "BMC-18733"
+    "registration_number": "BMC-18733",
+    "availability": ["Monday", "Wednesday", "Thursday"],
+    "consultation_fee": "700 BDT",
+    "working_place": "Popular Diagnostic Center"
   },
   {
     "id": 6,
@@ -51,7 +66,10 @@
     "education": "MBBS, DDV",
     "speciality": "Dermatologist",
     "experience": "11 years",
-    "registration_number": "BMC-13456"
+    "registration_number": "BMC-13456",
+    "availability": ["Saturday", "Tuesday", "Thursday"],
+    "consultation_fee": "600 BDT",
+    "working_place": "Labaid Specialized Hospital"
   },
   {
     "id": 7,
@@ -60,7 +78,10 @@
     "education": "MBBS, MD (Pediatrics)",
     "speciality": "Pediatrician",
     "experience": "7 years",
-    "registration_number": "BMC-16543"
+    "registration_number": "BMC-16543",
+    "availability": ["Sunday", "Tuesday", "Thursday"],
+    "consultation_fee": "500 BDT",
+    "working_place": "United Hospital"
   },
   {
     "id": 8,
@@ -69,7 +90,10 @@
     "education": "MBBS, FCPS (ENT)",
     "speciality": "ENT Specialist",
     "experience": "13 years",
-    "registration_number": "BMC-19876"
+    "registration_number": "BMC-19876",
+    "availability": ["Monday", "Wednesday", "Saturday"],
+    "consultation_fee": "850 BDT",
+    "working_place": "Ibn Sina Hospital"
   },
   {
     "id": 9,
@@ -78,6 +102,9 @@
     "education": "MBBS, MD (Neurology)",
     "speciality": "Neurologist",
     "experience": "14 years",
-    "registration_number": "BMC-14321"
+    "registration_number": "BMC-14321",
+    "availability": ["Tuesday", "Thursday", "Friday"],
+    "consultation_fee": "1300 BDT",
+    "working_place": "Bangabandhu Sheikh Mujib Medical University"
   }
 ]
