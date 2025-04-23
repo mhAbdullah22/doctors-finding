@@ -21,8 +21,8 @@ const footer = () => {
         <li>
         <NavLink to='/mybookings'>My Bookings</NavLink>
         </li>
-        <li><NavLink>Blogs</NavLink></li>
-        <li><NavLink>Contact Us</NavLink></li>
+        <li><NavLink to='/blogs'>Blogs</NavLink></li>
+        <li><NavLink to='/contact'>Contact Us</NavLink></li>
       </ul>
     </div>
     <div className="navbar-end flex gap-4 mr-[500px] pt-2">

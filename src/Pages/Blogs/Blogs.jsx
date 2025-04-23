@@ -1,16 +1,15 @@
 import React from 'react';
+import { useLoaderData } from 'react-router';
+import Blog from './Blog';
 
 const Blogs = () => {
+  const blogsdata=useLoaderData();
+
   return (
     <div className='my-4'>
-      <div className='bg-white p-4 rounded-2xl'>
-      <div>
-        <p>ques</p>
-      </div>
-      <div>
-        <p>ans</p>
-      </div>
-      </div>
+     {
+      blogsdata.map(blog=><Blog key={blog.id} blog={blog}></Blog>)
+     }
 
     </div>
   );
