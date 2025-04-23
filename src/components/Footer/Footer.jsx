@@ -19,16 +19,16 @@ const footer = () => {
       <ul className="menu menu-horizontal px-1">
       <li><NavLink to='/'>Home</NavLink></li>
         <li>
-        <NavLink>My Bookings</NavLink>
+        <NavLink to='/mybookings'>My Bookings</NavLink>
         </li>
         <li><NavLink>Blogs</NavLink></li>
         <li><NavLink>Contact Us</NavLink></li>
       </ul>
     </div>
     <div className="navbar-end flex gap-4 mr-[500px] pt-2">
-      <a href="">< FaFacebook size={22}/></a>
-      <a href=""><FaLinkedin size={22} /></a>
-      <a href=""><FaGithub size={22} /></a>
+      <a href="https://www.facebook.com/">< FaFacebook size={22}/></a>
+      <a href="https://www.linkedin.com/"><FaLinkedin size={22} /></a>
+      <a href="https://github.com/mhAbdullah22"><FaGithub size={22} /></a>
     </div>
   </div>
   );

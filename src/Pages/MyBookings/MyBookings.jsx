@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useLoaderData} from 'react-router';
 import { getStoreddr } from '../../Utility/addtoDB';
 import MyBooking from './MyBooking';
+import Recharts from '../Recharts/Recharts';
 
 const MyBookings = () => {
   const [drstate,setDrState]=useState([]);
@@ -11,6 +12,7 @@ const MyBookings = () => {
     const converteddata=data.map(dr=>parseInt(dr));
     const drList=fetchdata.filter(dr=>converteddata.includes(dr.id));
     setDrState(drList);
+    
      
   },[])
    
@@ -18,7 +20,7 @@ const MyBookings = () => {
   <div>
     {/* <div>
     {
-    drstate.map(d=><MyBooking d={d} key={d.id}></MyBooking>)
+    drstate.map(d=><Recharts key={d.id}></Recharts>)
    }
     </div> */}
     <div>

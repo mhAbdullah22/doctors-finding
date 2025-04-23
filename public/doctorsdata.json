@@ -106,5 +106,41 @@
     "availability": ["Tuesday", "Thursday", "Friday"],
     "consultation_fee": "1300 BDT",
     "working_place": "Bangabandhu Sheikh Mujib Medical University"
+  },
+  {
+    "id": 10,
+    "image": "https://i.ibb.co.com/MxY98727/Doctor-PNG-Images.png",
+    "name": "Dr. Nafisa Sultana",
+    "education": "MBBS, MD (Nephrology)",
+    "speciality": "Nephrologist",
+    "experience": "10 years",
+    "registration_number": "BMC-15678",
+    "availability": ["Sunday", "Wednesday", "Friday"],
+    "consultation_fee": "1100 BDT",
+    "working_place": "Kidney Foundation Hospital and Research Institute"
+  },
+  {
+    "id": 11,
+    "image": "https://i.ibb.co.com/PsCMDY0v/doctor-PNG16041.png",
+    "name": "Dr. Tanvir Hossain",
+    "education": "MBBS, FCPS (Psychiatry)",
+    "speciality": "Psychiatrist",
+    "experience": "9 years",
+    "registration_number": "BMC-12209",
+    "availability": ["Saturday", "Monday", "Thursday"],
+    "consultation_fee": "950 BDT",
+    "working_place": "Mental Health Centre, Dhaka"
+  },
+  {
+    "id": 12,
+    "image": "https://i.ibb.co.com/MxY98727/Doctor-PNG-Images.png",
+    "name": "Dr. Ruma Akter",
+    "education": "MBBS, MS (Ophthalmology)",
+    "speciality": "Eye Specialist",
+    "experience": "11 years",
+    "registration_number": "BMC-19011",
+    "availability": ["Sunday", "Tuesday", "Friday"],
+    "consultation_fee": "750 BDT",
+    "working_place": "Vision Eye Hospital"
   }
 ]

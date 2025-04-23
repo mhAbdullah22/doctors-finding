@@ -3,6 +3,7 @@ import { Link, useLoaderData, useParams } from 'react-router';
 import '../DoctorDetails/doctordetails.css'
 import { addToStoredDB } from '../../Utility/addtoDB';
 
+
 const DoctorDetails = () => {
   
   const data=useLoaderData();
@@ -15,6 +16,7 @@ const DoctorDetails = () => {
   
   const handleAppointment=(id)=>{
     addToStoredDB(id);
+    
     }
   
  
@@ -58,7 +60,10 @@ const DoctorDetails = () => {
         </div>
         <p className='text-xs p-1 bg-[#fcd99d] border-2 border-amber-100 rounded-2xl w-[900px] text-center'>Due to high patient volume, we are currently accepting appointments for today only. We appreciate your understanding and cooperation.</p>
         
-        <Link to='/mybookings'> <button onClick={()=>handleAppointment(id)} className='btn bg-blue-600 text-white rounded-3xl px-130'>Book Appointment Now</button></Link>
+        <Link to='/mybookings'> <button onClick={()=>handleAppointment(id)} className='btn bg-blue-600 text-white rounded-3xl px-130'>Book Appointment Now</button>
+      
+        </Link>
+        
     
       </div>
     </div>
