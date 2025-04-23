@@ -12,17 +12,18 @@ const MyBookings = () => {
     const converteddata=data.map(dr=>parseInt(dr));
     const drList=fetchdata.filter(dr=>converteddata.includes(dr.id));
     setDrState(drList);
-    
-     
+    console.log(drList);
   },[])
+ 
    
   return (
   <div>
-    {/* <div>
+    <div>
     {
-    drstate.map(d=><Recharts key={d.id}></Recharts>)
+    // drstate.map(d=><Recharts  fetchdata={fetchdata} key={d.id}></Recharts>)
+    <Recharts fetchdata={fetchdata}></Recharts>
    }
-    </div> */}
+    </div>
     <div>
     <h3 className='font-bold text-2xl text-center mt-8'>My Today Appointments</h3>
     <p className='text-center my-3'>Our platform connects you with verified, experienced doctors across various specialties — all at your convenience.</p>
