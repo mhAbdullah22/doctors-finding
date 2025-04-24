@@ -14,7 +14,7 @@ const Success = () => {
       <h3 className='font-bold text-3xl'>We Provide Best Medical Services</h3>
       <p>Our platform connects you with verified, experienced doctors across various specialties — all at your convenience. </p>
       <div className='flex gap-12 items-center justify-center '>
-        <div className='bg-white py-3 pl-3 pr-6 flex flex-col gap-2 rounded-md'>
+        <div className='bg-white py-3 pl-3 pr-10 flex flex-col gap-2 rounded-md'>
           <img className='w-[30px]' src={successdr} alt="" />
 
           <h1 ref={ref} className="font-bold text-4xl">
@@ -23,7 +23,7 @@ const Success = () => {
           <p>Total Doctors</p>
           
         </div>
-        <div className='bg-white py-3 pl-3 pr-6 flex flex-col gap-2 rounded-md'>
+        <div className='bg-white py-3 pl-3 pr-10 flex flex-col gap-2 rounded-md'>
           <img className='w-[30px]' src={review} alt="" />
           <h1 ref={ref} className="font-bold text-4xl">
         {inView ? <CountUp end={467} duration={5} /> : 467}+
@@ -37,7 +37,7 @@ const Success = () => {
       </h1>
           <p>Patients</p>
         </div>
-        <div className='bg-white py-3 pl-3 pr-6 flex flex-col gap-2 rounded-md'>
+        <div className='bg-white py-3 pl-3 pr-10 flex flex-col gap-2 rounded-md'>
           <img className='w-[30px]' src={staffs} alt="" />
           <h1 ref={ref} className="font-bold text-4xl">
         {inView ? <CountUp end={300} duration={5} /> : 300}+

@@ -4,6 +4,7 @@ import { Link } from 'react-router';
 
 const Doctor = ({doctor}) => {
  const {image,name,experience,education,registration_number,speciality,id}=doctor;
+
   // console.log(doctor);
   return (
     <div className='bg-white py-5 px-3  flex flex-col gap-3 rounded-xl items-center justify-center my-5'>

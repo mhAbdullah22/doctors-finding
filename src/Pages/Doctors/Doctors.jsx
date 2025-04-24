@@ -2,12 +2,28 @@ import React, { Suspense, useEffect, useState } from 'react';
 import Doctor from '../Doctor/Doctor';
 
 
-const Doctors = () => {
+const Doctors = ({data}) => {
+  
+  const [showdr,setShowdr]=useState(false);
  const [doctorsPromise,setDoctorsPromise]=useState([]);
   
+  // useEffect(()=>{
+  // fetch("/doctorsdata.json").then(res=>res.json()).then(data=>setDoctorsPromise(data));
+    
+   
+  // },[])
+
   useEffect(()=>{
-    fetch("/doctorsdata.json").then(res=>res.json()).then(data=>setDoctorsPromise(data));
-  },[])
+ if(showdr)
+ {
+  setDoctorsPromise(data)
+ }
+ else{
+  setDoctorsPromise(data.slice(0,6))
+ }
+  },[showdr,data])
+
+  
   return (
    <div>
      <Suspense fallback={<span className="loading loading-bars loading-lg"></span>}>
@@ -20,9 +36,11 @@ const Doctors = () => {
             doctorsPromise.map(doctor=><Doctor doctor={doctor} key={doctor.id}></Doctor>)
             
           }
+      
         </div>
         
       </Suspense>
+      <button onClick={()=>setShowdr(!showdr)} className='btn btn-info'>{showdr?'Show Less':'SHow All'}</button>
    </div>
   );
 };
