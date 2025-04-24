@@ -1,6 +1,8 @@
 import React from 'react';
 
-const MyBooking = ({d}) => {
+const MyBooking = ({d,handleCancelAppointment}) => {
+ 
+ 
   return (
     
         
@@ -17,7 +19,9 @@ consultation_fee} + VAT</p>
             </div>
             </div>
             <div>
-              <button className='btn border-2 border-red-400
+              <button onClick={() => 
+            handleCancelAppointment(d.id)}
+ className='btn border-2 border-red-400
               rounded-3xl text-red-400 bg-white px-138 text-nowrap'>Cancel Appointment</button>
             </div>
           </div>

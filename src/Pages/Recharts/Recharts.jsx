@@ -1,30 +1,14 @@
-import React, { useEffect, useState } from 'react';
-
-import { getStoreddr } from '../../Utility/addtoDB';
 
 import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid } from 'recharts';
 
-const Recharts = ({fetchdata}) => {
+const Recharts = ({drstate}) => {
+
   
-  const fetchdat=fetchdata;
-  
-  const [chartdata,setChartdata]=useState([]);
-  
-  useEffect(()=>{
-   
-   const data=getStoreddr();
-    // console.log(data);
-    const converteddata=data.map(dr=>parseInt(dr));
-    const drList=fetchdat.filter(dr=>converteddata.includes(dr.id));
-    setChartdata(drList);
-    // console.log(drList);
-  },[])
-  
-  const updatedData = chartdata.map(item => ({
+  const updatedData = drstate.map(item => ({
     ...item,
     consultation_fee: parseInt(item.consultation_fee)
   }));
-  console.log(updatedData);
+  // console.log(updatedData);
   
   const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', 'red', 'pink'];
   const getPath = (x, y, width, height) => {
