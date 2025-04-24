@@ -5,6 +5,12 @@ import MyBooking from './MyBooking';
 import Recharts from '../Recharts/Recharts';
 
 const MyBookings = () => {
+  const [visible, setVisible] = useState(true);
+  useEffect(() => {
+    const timer = setTimeout(() => setVisible(false), 400);
+    return () => clearTimeout(timer);
+  }, []);
+
   const handleCancelAppointment=(id)=>{
     const remainingdr=drstate.filter(dr=>dr.id!==id)
     setDrState(remainingdr);
@@ -23,41 +29,45 @@ const MyBookings = () => {
   },[])
  
 
+  if (visible) {
+    return (
+      <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-white bg-opacity-75 z-50">
+        <span className="loading loading-bars loading-lg"></span>
+      </div>
+    );
+  }
 
-    if (drstate.length > 0) {
-      return (
-        <>
-          <div>
-            <Recharts drstate={drstate} fetchdata={fetchdata} />
-          </div>
-          <div>
-            <h3 className='font-bold text-2xl text-center mt-8'>My Today Appointments</h3>
-            <p className='text-center my-3'>
-              Our platform connects you with verified, experienced doctors across various specialties — all at your convenience.
-            </p>
-          </div>
-          {
-            drstate.map(d => (
-              <MyBooking
-                handleCancelAppointment={handleCancelAppointment}
-                d={d}
-                key={d.id}
-              />
-            ))
-          }
-        </>
-      );
-    } 
-    
-    else {
-      return (
-        <div className="text-center mt-10 py-36">
-          <h2 className="text-3xl font-semibold mb-4">You have not booked any appointment yet</h2>
-          <p>Our platform connects you with verified,experienced doctors across various specialties-all at your convenience</p>
-         <NavLink to='/'> <button className='btn btn-primary mt-4'>Book an Appointment</button></NavLink>
+  if (drstate.length > 0) {
+    return (
+      <>
+        <div>
+          <Recharts drstate={drstate} fetchdata={fetchdata} />
         </div>
-      );
-    }
+        <div>
+          <h3 className='font-bold text-2xl text-center mt-8'>My Today Appointments</h3>
+          <p className='text-center my-3'>
+            Our platform connects you with verified, experienced doctors across various specialties — all at your convenience.
+          </p>
+        </div>
+        {drstate.map(d => (
+          <MyBooking
+            handleCancelAppointment={handleCancelAppointment}
+            d={d}
+            key={d.id}
+          />
+        ))}
+      </>
+    );
+  } else {
+    return (
+      <div className="text-center mt-10 py-36">
+        <h2 className="text-3xl font-semibold mb-4">You have not booked any appointment yet</h2>
+        <p>Our platform connects you with verified, experienced doctors across various specialties — all at your convenience.</p>
+        <NavLink to='/'><button className='btn btn-primary mt-4'>Book an Appointment</button></NavLink>
+      </div>
+    );
+  }
+
   }
   
    

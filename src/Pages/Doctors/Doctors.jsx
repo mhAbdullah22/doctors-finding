@@ -7,11 +7,7 @@ const Doctors = ({data}) => {
   const [showdr,setShowdr]=useState(false);
  const [doctorsPromise,setDoctorsPromise]=useState([]);
   
-  // useEffect(()=>{
-  // fetch("/doctorsdata.json").then(res=>res.json()).then(data=>setDoctorsPromise(data));
-    
-   
-  // },[])
+
 
   useEffect(()=>{
  if(showdr)
